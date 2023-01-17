@@ -5,8 +5,7 @@
   left: 4px;
   top: 4px;
   background-color: #f2f2f2;
-  background: url('../../../images/cat.png') 50% 180% no-repeat,
-              linear-gradient(135deg, transparent 30px, #f2f2f2 0) no-repeat;
+  background: linear-gradient(135deg, transparent 30px, #f2f2f2 0) no-repeat;
   width: 312px;
   min-height: 472px;
   border-radius: 11px;
@@ -20,7 +19,20 @@
   top: -4px;
   min-height: 480px;
   border-radius: 12px;
-  background-color: #2eA8e6;
-  background: linear-gradient(135deg, transparent 31px, #2eA8e6 0);
+  background-color: #1698d9;
+  background: linear-gradient(135deg, transparent 31px, #1698d9 0);
   z-index: -1;
+}
+
+.card__content:hover {
+  cursor: pointer;
+}
+
+.card__content:hover .card__weight {
+  background-color: #2ea8e6;
+}
+
+.card__content:hover::before {
+  background-color: #2ea8e6;
+  background: linear-gradient(135deg, transparent 31px, #2ea8e6 0);
 }

@@ -10,4 +10,5 @@
   height: 80px;
   background-color: #1698d9;
   border-radius: 50%;
+  z-index: 1;
 }

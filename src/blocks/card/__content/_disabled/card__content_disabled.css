@@ -1,0 +1,18 @@
+.card__content_disabled::before {
+  background-color: #b3b3b3;
+  background: linear-gradient(135deg, transparent 31px, #b3b3b3 0);
+
+}
+
+.card__content_disabled:hover {
+  cursor: default;
+}
+
+.card__content_disabled:hover .card__weight {
+  background-color: #b3b3b3;
+}
+
+.card__content_disabled:hover::before {
+  background-color: #b3b3b3;
+  background: linear-gradient(135deg, transparent 31px, #b3b3b3 0);
+}

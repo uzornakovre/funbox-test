@@ -1,0 +1,20 @@
+.card__content_selected::before {
+  background-color: #d91667
+  ;
+  background: linear-gradient(135deg, transparent 31px, #d91667 0);
+
+}
+
+.card__content_selected:hover {
+  cursor: pointer;
+}
+
+.card__content_selected:hover .card__weight {
+  background-color: #e52e7a;
+  ;
+}
+
+.card__content_selected:hover::before {
+  background-color: #e52e7a;
+  background: linear-gradient(135deg, transparent 31px, #e52e7a 0);
+}
