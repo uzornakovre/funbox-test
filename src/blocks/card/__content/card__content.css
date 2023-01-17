@@ -1,7 +1,7 @@
 .card__content {
   position: relative;
   background-color: #f2f2f2;
-  background: url('../../../images/cat.png') 60% 175% no-repeat,
+  background: url('../../../images/cat.png') 50% 180% no-repeat,
               linear-gradient(135deg, transparent 30px, #f2f2f2 0) no-repeat;
   width: 312px;
   min-height: 472px;
@@ -17,6 +17,6 @@
   min-height: 480px;
   border-radius: 12px;
   background-color: #2eA8e6;
-  background: linear-gradient(135deg, transparent 30px, #2eA8e6 0);
+  background: linear-gradient(135deg, transparent 31px, #2eA8e6 0);
   z-index: -1;
 }
