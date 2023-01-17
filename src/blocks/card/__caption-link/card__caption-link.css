@@ -1,0 +1,10 @@
+.card__caption-link {
+  color: #1698d9;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698d9;
+}
+
+.card__caption-link:hover {
+   color: #00ffff;
+   border-color: #00ffff;
+}

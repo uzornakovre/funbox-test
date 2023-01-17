@@ -6,6 +6,8 @@
   font-style: normal;
   margin: 0 auto;
   background-color: #000;
+  background-position: center;
+  background-size: cover;
   background-image: url('../../images/background.png');
   color: #fff;
 }

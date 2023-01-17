@@ -1,8 +1,9 @@
 .card__overhead {
-  font-family: 'Trebuchet MS';
-  font-style: normal;
+  min-width: 211px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #666;
+  margin: 21px auto 5px;
+  text-align: center;
 }
