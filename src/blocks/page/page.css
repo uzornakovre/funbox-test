@@ -1,0 +1,11 @@
+.page {
+  width: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  margin: 0 auto;
+  background-color: #000;
+  background-image: url('../../images/background.png');
+  color: #fff;
+}

@@ -1,0 +1,11 @@
+.header__title {
+  font-family: "Exo", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 1px 1px #000;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  margin: 0;
+}
