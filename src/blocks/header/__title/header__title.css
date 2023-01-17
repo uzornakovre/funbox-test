@@ -7,6 +7,12 @@
   color: #fff;
   text-shadow: 0px 1px 1px #000;
   padding-top: 36px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .header__title {
+    max-width: 320px;
+  }
 }

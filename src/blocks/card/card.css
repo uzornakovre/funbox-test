@@ -1,5 +1,5 @@
 .card {
   position: relative;
-  width: 320px;
-  height: 509px;
+  max-width: 320px;
+  min-height: 509px;
 }

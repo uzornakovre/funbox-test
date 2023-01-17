@@ -2,7 +2,29 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  gap: 80px;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 88px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards__list {
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cards__list {
+    column-gap: 80px;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards__list {
+    column-gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
 }

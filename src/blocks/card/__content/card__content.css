@@ -1,5 +1,9 @@
 .card__content {
+  box-sizing: border-box;
   position: relative;
+  padding-right: 20px;
+  left: 4px;
+  top: 4px;
   background-color: #f2f2f2;
   background: url('../../../images/cat.png') 50% 180% no-repeat,
               linear-gradient(135deg, transparent 30px, #f2f2f2 0) no-repeat;

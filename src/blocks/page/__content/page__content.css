@@ -1,5 +1,6 @@
 .page__content {
   max-width: 1120px;
+  min-width: 340px;
   position: relative;
   display: flex;
   flex-direction: column;
