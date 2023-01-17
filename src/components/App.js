@@ -44,6 +44,7 @@ function App() {
               </p>
             </article>
           </li>
+          <li className="cards__list-item">
             <article className="card">
               <div className="card__content">
                 <p className="card__overhead">Сказочное заморское яство</p>
@@ -64,9 +65,7 @@ function App() {
                 <a className="card__caption-link" href="#" target="_blank">купи</a>.
               </p>
             </article>
-          <li className="cards__list-item">
-
-</li>
+          </li>
         </ul>
       </main>
     </div>
