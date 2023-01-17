@@ -1,4 +1,7 @@
 .page__content {
   max-width: 1120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
