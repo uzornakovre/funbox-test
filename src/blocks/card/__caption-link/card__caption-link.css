@@ -1,14 +1,12 @@
 .card__caption-link {
   color: #1698d9;
-  padding: 5px;
+  padding: 0;
   border: none;
   background-color: transparent;
   text-decoration: underline dashed;
-  /* border-bottom: 1px dashed #1698d9; */
 }
 
 .card__caption-link:hover {
   cursor: pointer;
   color: #22a7e9;
-  /* border-color: #22a7e9; */
 }
