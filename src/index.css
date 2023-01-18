@@ -10,13 +10,14 @@
 @import url('./blocks/cards/__list-item/cards__list-item.css');
 @import url('./blocks/card/card.css');
 @import url('./blocks/card/__content/card__content.css');
+@import url('./blocks/card/__content/_type/card__content_type_disabled.css');
+@import url('./blocks/card/__content/_type/card__content_type_selected.css');
+@import url('./blocks/card/__content/_type/card__content_type_selected-hover.css');
 @import url('./blocks/card/__image/card__image.css');
 @import url('./blocks/card/__image/_disabled/card__image_disabled.css');
-@import url('./blocks/card/__content/_disabled/card__content_disabled.css');
-@import url('./blocks/card/__content/_selected/card__content_selected.css');
 @import url('./blocks/card/__overhead/card__overhead.css');
-@import url('./blocks/card/__overhead/_selected/card__overhead_selected.css');
-@import url('./blocks/card/__overhead/_disabled/card__overhead_disabled.css');
+@import url('./blocks/card/__overhead/_type/card__overhead_type_disabled.css');
+@import url('./blocks/card/__overhead/_type/card__overhead_type_selected.css');
 @import url('./blocks/card/__title/card__title.css');
 @import url('./blocks/card/__title/_disabled/card__title_disabled.css');
 @import url('./blocks/card/__subtitle/card__subtitle.css');
@@ -27,8 +28,8 @@
 @import url('./blocks/card/__caption/_disabled/card__caption_disabled.css');
 @import url('./blocks/card/__caption-link/card__caption-link.css');
 @import url('./blocks/card/__weight/card__weight.css');
-@import url('./blocks/card/__weight/_disabled/card__weight_disabled.css');
-@import url('./blocks/card/__weight/_selected/card__weight_selected.css');
+@import url('./blocks/card/__weight/_type/card__weight_type_disabled.css');
+@import url('./blocks/card/__weight/_type/card__weight_type_selected.css');
 @import url('./blocks/card/__weight-value/card__weight-value.css');
 @import url('./blocks/card/__weight-unit/card__weight-unit.css');
 

@@ -1,0 +1,9 @@
+.card__content_type_selected-hover:hover .card__weight {
+  background-color: #e52e7a;
+  ;
+}
+
+.card__content_type_selected-hover:hover::before {
+  background-color: #e52e7a;
+  background: linear-gradient(135deg, transparent 31px, #e52e7a 0);
+}

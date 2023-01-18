@@ -2,8 +2,9 @@ import React from 'react';
 
 function Card({ dish, inStock }) {
 
-  const [isSelected,   setSelected]     = React.useState(false);
-  const [overheadText, setOverheadText] = React.useState('Сказочное заморское яство');
+  const [isSelected,       setSelected        ] = React.useState(false);
+  const [overheadText,     setOverheadText    ] = React.useState('Сказочное заморское яство');
+  const [isMouseOver,      setMouseOver       ] = React.useState(false);
 
   function handleCardClick() {
     if (inStock) {
@@ -11,37 +12,43 @@ function Card({ dish, inStock }) {
     }
   }
 
-  // function handleMouseOut(evt) {
-  //   if (isSelected) {
-  //     setOverheadText('Котэ не одобряет?');
-  //   } else {
-  //     setOverheadText('Сказочное заморское яство');
-  //   }
-  // }
+  function handleMouseEnter() {
+    if (isSelected) {
+      setMouseOver(true);
+    } else {
+      setMouseOver(false);
+    }
+  }
 
-  // React.useState(() => {
-  //   if (isSelected) {
-  //     setOverheadText('Котэ не одобряет?');
-  //   } else {
-  //     setOverheadText('Сказочное заморское яство');
-  //   }
-  // }, [isSelected])
+  function handleMouseLeave() {
+    setMouseOver(false);
+  }
+
+  React.useEffect(() => {
+    if (isSelected && isMouseOver) {
+      setOverheadText('Котэ не одобряет?');
+    } else {
+      setOverheadText('Сказочное заморское яство');
+    }
+  }, [isMouseOver, isSelected])
 
   return (
     <article className="card">
       <div className={`card__content ${!inStock && 
-                      'card__content_disabled'} ${isSelected && 
-                      'card__content_selected'}`}
+                      'card__content_type_disabled'} ${isSelected && 
+                      'card__content_type_selected'} ${isSelected && isMouseOver &&
+                      'card__content_type_selected-hover'}`}
            onClick={handleCardClick}
-           onMouseOut={handleMouseOut}>
+           onMouseEnter={handleMouseEnter}
+           onMouseLeave={handleMouseLeave}>
         
         { isSelected && <p className={`card__overhead ${!inStock && 
-                                      'card__overhead_disabled'}
-                                       card__overhead_selected`}>{overheadText}</p>
+                                      'card__overhead_type_disabled'}
+                                       card__overhead_type_selected`}>{overheadText}</p>
         }
 
         { !isSelected && <p className={`card__overhead ${!inStock && 
-                                       'card__overhead_disabled'}`}>{overheadText}</p>
+                                       'card__overhead_type_disabled'}`}>{overheadText}</p>
         }
 
         <h2 className={`card__title ${!inStock && 
@@ -61,8 +68,8 @@ function Card({ dish, inStock }) {
                                          'card__description_disabled'}`}>заказчик доволен</p> }
 
         <div className={`card__weight ${!inStock && 
-                        'card__weight_disabled'} ${isSelected && 
-                        'card__weight_selected'}`}>
+                        'card__weight_type_disabled'} ${isSelected && 
+                        'card__weight_type_selected'}`}>
 
           <p className="card__weight-value">{dish.weight}</p> 
           <p className="card__weight-unit">кг</p>

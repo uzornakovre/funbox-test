@@ -1,18 +1,18 @@
-.card__content_disabled::before {
+.card__content_type_disabled::before {
   background-color: #b3b3b3;
   background: linear-gradient(135deg, transparent 31px, #b3b3b3 0);
 
 }
 
-.card__content_disabled:hover {
+.card__content_type_disabled:hover {
   cursor: default;
 }
 
-.card__content_disabled:hover .card__weight {
+.card__content_type_disabled:hover .card__weight {
   background-color: #b3b3b3;
 }
 
-.card__content_disabled:hover::before {
+.card__content_type_disabled:hover::before {
   background-color: #b3b3b3;
   background: linear-gradient(135deg, transparent 31px, #b3b3b3 0);
 }
