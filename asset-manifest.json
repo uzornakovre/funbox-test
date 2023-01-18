@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/uzornakovre/static/css/main.db536e42.css",
+    "main.js": "/uzornakovre/static/js/main.d68c3a83.js",
+    "static/js/787.8d5fba68.chunk.js": "/uzornakovre/static/js/787.8d5fba68.chunk.js",
+    "static/media/cat.png": "/uzornakovre/static/media/cat.22c79082392189fbda9e.png",
+    "static/media/background.png": "/uzornakovre/static/media/background.8b93e2127ee44e2a8146.png",
+    "static/media/ExoThin.otf": "/uzornakovre/static/media/ExoThin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/uzornakovre/index.html",
+    "main.db536e42.css.map": "/uzornakovre/static/css/main.db536e42.css.map",
+    "main.d68c3a83.js.map": "/uzornakovre/static/js/main.d68c3a83.js.map",
+    "787.8d5fba68.chunk.js.map": "/uzornakovre/static/js/787.8d5fba68.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db536e42.css",
+    "static/js/main.d68c3a83.js"
+  ]
+}
