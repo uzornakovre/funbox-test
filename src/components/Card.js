@@ -2,14 +2,13 @@ import React from 'react';
 
 function Card({ dish, inStock }) {
 
-  const [isSelected,       setSelected        ] = React.useState(false);
-  const [overheadText,     setOverheadText    ] = React.useState('Сказочное заморское яство');
-  const [isMouseOver,      setMouseOver       ] = React.useState(false);
+  const [isSelected,   setSelected    ] = React.useState(false);
+  const [overheadText, setOverheadText] = React.useState('Сказочное заморское яство');
+  const [isMouseOver,  setMouseOver   ] = React.useState(false);
 
   function handleCardClick() {
-    if (inStock) {
-      setSelected(!isSelected);
-    }
+    if (isSelected) setMouseOver(false);
+    if (inStock) setSelected(!isSelected);
   }
 
   function handleMouseEnter() {
